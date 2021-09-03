@@ -31,9 +31,9 @@ public class java {
          String nameCave;
          String dragonColor;
          double dragonHp;
-        
-         
-        
+         double knightDamage;
+         double clericHeal;
+         double fireballDamage;
         
         
         
@@ -62,16 +62,21 @@ public class java {
         System.out.println("Now give me a decimal that is over 100:");
             dragonHp = sc.nextDouble();  
                 
+        System.out.println("Give me a second Decimal:");
+            knightDamage = sc.nextDouble();      
             
+        System.out.println("Give me a third decimal that is less than the previous:");
+            clericHeal = sc.nextDouble();      
             
-            
-            
-            
+        System.out.println("Give me a 4th decimal less than 100:");
+            fireballDamage = sc.nextDouble();          
             
         
         
-        
-        
+         double damageLeft = knightDamage - clericHeal;
+         double dragonhpLeft = dragonHp - fireballDamage;
+         
+         
           // Where the story is told
         
          System.out.println("There once was team of brave adventurers.");
@@ -84,7 +89,14 @@ public class java {
    
          System.out.println("The " + teamName + " were quickly approaching The cave of " + nameCave + ".");      
          
-        System.out.println("Inside was an Adult " + dragonColor + "dragon with " + dragonHp );
+         System.out.println("Inside was an Adult " + dragonColor + " dragon with " + dragonHp  + " HP");
+        
+         System.out.println("The knight leaped at the dragon, but the dragon swatted him out fo the air dealing " + knightDamage + " points of damage.");
+        
+         System.out.println("The cleric rushed over and cast healing word, wich healed " + clericHeal + " points of damage, leaving the knight with only " + damageLeft + " points of damage left.");
+        
+         System.out.println("While the dragon was distracted, the wizard cast fireball, dealing" + fireballDamage + " points of damage, leaving the dragon with only " + dragonhpLeft + " HP.");
+        
         
     }
     
