@@ -28,8 +28,9 @@ public class java {
          String firstName;
          String teamName;
          int teamLevel;
-    
-    
+         String nameCave;
+         String dragonColor;
+         double dragonHp;
         
          
         
@@ -40,20 +41,33 @@ public class java {
         // Where the qustions are asked and stored
         
         System.out.println("Hello, What is your name: ");
-            firstName = sc.nextLine();  
+            firstName = sc.next();  
         
       
         
-        System.out.println("Hello " + firstName + ", Give me the name of a team");
-            teamName = sc.nextLine();  
+        System.out.println("Hello " + firstName + ", Give me the name of a team:");
+            teamName = sc.next();  
         
          
-        System.out.println("Now give me a whole number");
+        System.out.println("Now give me a whole number:");
             teamLevel = sc.nextInt();  
+            
+         
+        System.out.println("Next, give me a proper noun:");
+            nameCave = sc.next();  
         
+        System.out.println("Now, give me a color:");
+            dragonColor = sc.next();  
         
-        
-        
+        System.out.println("Now give me a decimal that is over 100:");
+            dragonHp = sc.nextDouble();  
+                
+            
+            
+            
+            
+            
+            
         
         
         
@@ -61,13 +75,16 @@ public class java {
           // Where the story is told
         
          System.out.println("There once was team of brave adventurers.");
+         
          System.out.println("The team consisted of a cleric, a knight, and a wizard.");
-         System.out.println("The team was named The " + teamName );
          
+         System.out.println("Their names were The " + teamName + ".");
+         
+         System.out.println("Currently our brave heroes were level " + teamLevel + ".");
    
-                 
+         System.out.println("The " + teamName + " were quickly approaching The cave of " + nameCave + ".");      
          
-        
+        System.out.println("Inside was an Adult " + dragonColor + "dragon with " + dragonHp );
         
     }
     
